@@ -1789,6 +1789,8 @@ AnimeListColumn AnimeListDialog::ListView::TranslateColumnName(const std::wstrin
     {L"user_last_updated", kColumnUserLastUpdated},
     {L"user_progress", kColumnUserProgress},
     {L"user_rating", kColumnUserRating},
+    {L"user_date_started", kColumnUserDateStarted},
+    {L"user_date_finished", kColumnUserDateFinished},
   };
 
   auto it = names.find(name);
