@@ -475,6 +475,8 @@ static bool AnimeListNeedsResort() {
     case kColumnUserLastUpdated:
     case kColumnUserProgress:
     case kColumnUserRating:
+    case kColumnUserDateStarted:
+    case kColumnUserDateFinished:
       return true;
   }
   return false;
