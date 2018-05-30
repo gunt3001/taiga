@@ -430,6 +430,10 @@ int AnimeListDialog::ListView::GetDefaultSortOrder(AnimeListColumn column) {
 
 int AnimeListDialog::ListView::GetSortType(AnimeListColumn column) {
   switch (column) {
+    case kColumnUserDateStarted:
+      return ui::kListSortMyDateStart;
+    case kColumnUserDateFinished:
+      return ui::kListSortMyDateFinish;
     case kColumnUserLastUpdated:
       return ui::kListSortLastUpdated;
     case kColumnUserProgress:
