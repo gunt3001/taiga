@@ -1577,12 +1577,12 @@ void AnimeListDialog::ListView::InitializeColumns() {
        LVCFMT_RIGHT, L"Season", L"anime_season"})));
   columns.insert(std::make_pair(kColumnUserDateStarted, ColumnData(
       {kColumnUserDateStarted, false, i, i++,
-       0, static_cast<unsigned short>(ScaleX(80)), static_cast<unsigned short>(ScaleX(80)),
-       LVCFMT_CENTER, L"Start date", L"user_date_started"})));
+       0, static_cast<unsigned short>(ScaleX(90)), static_cast<unsigned short>(ScaleX(90)),
+       LVCFMT_CENTER, L"Started", L"user_date_started"})));
   columns.insert(std::make_pair(kColumnUserDateFinished, ColumnData(
       {kColumnUserDateFinished, false, i, i++,
-       0, static_cast<unsigned short>(ScaleX(80)), static_cast<unsigned short>(ScaleX(80)),
-       LVCFMT_CENTER, L"Finish date", L"user_date_finished"})));
+       0, static_cast<unsigned short>(ScaleX(90)), static_cast<unsigned short>(ScaleX(90)),
+       LVCFMT_CENTER, L"Completed", L"user_date_finished"})));
   columns.insert(std::make_pair(kColumnUserLastUpdated, ColumnData(
       {kColumnUserLastUpdated, false, i, i++,
        0, static_cast<unsigned short>(ScaleX(100)), static_cast<unsigned short>(ScaleX(85)),
