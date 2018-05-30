@@ -1465,6 +1465,12 @@ void AnimeListDialog::RefreshListItemColumns(int index, const anime::Item& anime
       case kColumnUserRating:
         text = anime::TranslateMyScore(anime_item.GetMyScore());
         break;
+      case kColumnUserDateStarted:
+        text = anime_item.GetMyDateStart().to_string();
+        break;
+      case kColumnUserDateFinished:
+        text = anime_item.GetMyDateEnd().to_string();
+        break;
     }
     if (!text.empty())
       listview.SetItem(index, column.index, text.c_str());
