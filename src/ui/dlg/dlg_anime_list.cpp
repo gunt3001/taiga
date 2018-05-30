@@ -1466,10 +1466,10 @@ void AnimeListDialog::RefreshListItemColumns(int index, const anime::Item& anime
         text = anime::TranslateMyScore(anime_item.GetMyScore());
         break;
       case kColumnUserDateStarted:
-        text = anime_item.GetMyDateStart().to_string();
+        text = anime::TranslateMyDate(anime_item.GetMyDateStart());
         break;
       case kColumnUserDateFinished:
-        text = anime_item.GetMyDateEnd().to_string();
+        text = anime::TranslateMyDate(anime_item.GetMyDateEnd());
         break;
     }
     if (!text.empty())

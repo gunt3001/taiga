@@ -998,6 +998,10 @@ std::wstring TranslateMyScore(int value, const std::wstring& default_char) {
   }
 }
 
+std::wstring TranslateMyDate(const Date& value, const std::wstring& default_char) {
+  return IsValidDate(value) ? value.to_string() : default_char;
+}
+
 std::wstring TranslateMyScoreFull(int value) {
   switch (taiga::GetCurrentServiceId()) {
     default:
