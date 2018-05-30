@@ -419,6 +419,8 @@ int AnimeListDialog::ListView::GetDefaultSortOrder(AnimeListColumn column) {
     case kColumnUserLastUpdated:
     case kColumnUserProgress:
     case kColumnUserRating:
+    case kColumnUserDateStarted:
+    case kColumnUserDateFinished:
       return -1;
     case kColumnAnimeTitle:
     default:
