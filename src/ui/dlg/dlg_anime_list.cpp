@@ -1228,6 +1228,14 @@ LRESULT AnimeListDialog::OnListCustomDraw(LPARAM lParam) {
               anime_item->GetMyLastUpdated() == L"0")
             pCD->clrText = GetSysColor(COLOR_GRAYTEXT);
           break;
+        case kColumnUserDateStarted:
+          if (!anime::IsValidDate(anime_item->GetMyDateStart()))
+            pCD->clrText = GetSysColor(COLOR_GRAYTEXT);
+          break;
+        case kColumnUserDateFinished:
+          if (!anime::IsValidDate(anime_item->GetMyDateEnd()))
+            pCD->clrText = GetSysColor(COLOR_GRAYTEXT);
+          break;
       }
 
       // Indicate currently playing
